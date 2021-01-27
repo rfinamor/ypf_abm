@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Ypf Device Abm</title>
+  </head>
+
+  <body>
+    <script>
+      window.onload = function () {
+        const component = document.querySelector("ypf-device-abm");
+        component.patents = [{ title: "A203BMC" }];
+        component.backendUrl = "api.php";
+        component.transportists = [
+          { title: "Rodri", number: "00000010" },
+          { title: "Jorge", number: "00000020" },
+        ];
+        component.terminals = [
+          { title: "Terminal A", code: "00000010" },
+          { title: "Terminal B", code: "00000012" },
+        ];
+      };
+    </script>
+    <ypf-device-abm></ypf-device-abm>
+  </body>
+</html>
