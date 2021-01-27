@@ -1,0 +1,19 @@
+steps:
+  - name: "gcr.io/cloud-builders/gsutil"
+    args: ["cp", "gs://quadminds-build-secrets/.npmrc", "."]
+  - name: "gcr.io/cloud-builders/npm"
+    args: ["install"]
+  - name: "gcr.io/cloud-builders/npm"
+    args: ["run", "build"]
+
+  - name: "gcr.io/cloud-builders/gsutil"
+    args:
+      [
+        "-m",
+        "cp",
+        "-z",
+        "js",
+        "-r",
+        "./build/*",
+        "gs://webcomponents/webcomponents/ypf/",
+      ]

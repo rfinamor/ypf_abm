@@ -1,0 +1,6 @@
+{
+  "build": {
+    "componentPath": "direflow-components",
+    "filename": "ypf-device-abm-wc.js"
+  }
+}
