@@ -1,0 +1,6 @@
+.app {
+}
+
+.MuiToolbar-root.MuiToolbar-regular.MUIDataTableToolbar-root-32.MuiToolbar-gutters {
+  margin-bottom: 15px;
+}
